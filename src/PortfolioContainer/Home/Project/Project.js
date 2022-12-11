@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import project1 from "../../../assets/first-project.PNG";
 import project2 from "../../../assets/second-project.PNG";
 import project3 from "../../../assets/third.PNG";
@@ -9,43 +10,112 @@ const Project = () => {
       <h2 className="text-4xl font-bold text-center my-3">My Recent Work</h2>
       <p className="text-xl font-semibold text-center my-3">
         Here are a few past design projects I've worked on. Want to see more?{" "}
-        <a href="bikashdey1220@gmail.com">Email me.</a>
+        <Link href="bikashdey1220@gmail.com">Email me.</Link>
       </p>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 my-10 ml-0 md:ml-10 gap-10">
-        <div className="card card-compact w-96 bg-base-100 shadow-xl">
-          <figure>
-            <img src={project1} alt="" />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title">First Project</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div className="card-actions justify-center">
-              <button className="btn btn-primary">Show Details</button>
-            </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-20 ml-8">
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+          <Link href="#">
+            <img class="rounded-t-lg" src={project1} alt="" />
+          </Link>
+          <div class="p-5">
+            <Link href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                Noteworthy technology acquisitions 2021
+              </h5>
+            </Link>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+            <Link
+              to="/details"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Read more
+              <svg
+                aria-hidden="true"
+                class="w-4 h-4 ml-2 -mr-1"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </Link>
           </div>
         </div>
-        <div className="card card-compact w-96 bg-base-100 shadow-xl">
-          <figure>
-            <img src={project2} alt="" />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title">Second Project</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div className="card-actions justify-center">
-              <button className="btn btn-primary">Show Details</button>
-            </div>
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+          <Link href="#">
+            <img class="rounded-t-lg" src={project2} alt="" />
+          </Link>
+          <div class="p-5">
+            <Link href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                Noteworthy technology acquisitions 2021
+              </h5>
+            </Link>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+            <Link
+              to="/details"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Read more
+              <svg
+                aria-hidden="true"
+                class="w-4 h-4 ml-2 -mr-1"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </Link>
           </div>
         </div>
-        <div className="card card-compact w-96 bg-base-100 shadow-xl">
-          <figure>
-            <img src={project3} alt="" />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title">Third Project</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div className="card-actions justify-center">
-              <button className="btn btn-primary">Show Details</button>
-            </div>
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+          <Link href="#">
+            <img class="rounded-t-lg" src={project3} alt="" />
+          </Link>
+          <div class="p-5">
+            <Link href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                Noteworthy technology acquisitions 2021
+              </h5>
+            </Link>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+            <Link
+              to="/details"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Read more
+              <svg
+                aria-hidden="true"
+                class="w-4 h-4 ml-2 -mr-1"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </Link>
           </div>
         </div>
       </div>
